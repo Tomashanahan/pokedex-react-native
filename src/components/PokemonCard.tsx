@@ -45,6 +45,15 @@ function PokemonCard({pokemon}: Props) {
       activeOpacity={0.8}
       style={style.touchableOpacity}
       onPress={() => navigator.navigate('Pokemon' as never, {simplePokemon: pokemon, color: bgColors} as never)}>
+      {/* // onPress={() =>
+      //   navigator.navigate(
+      //     'HomeScreen' as never,
+      //     {
+      //       screen: 'Pokemon',
+      //       params: {simplePokemon: pokemon, color: bgColors},
+      //     } as never,
+      //   )
+      // }> */}
       <FadeInImage style={style.img} uri={pokemon.picture} />
       <View style={style.textContainer}>
         <Text style={{...style.text}}>

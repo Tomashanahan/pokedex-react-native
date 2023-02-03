@@ -88,7 +88,7 @@ function PokemonDetails({pokemonDetail}: Props) {
         </View>
       </View>
 
-      <View style={{...style.container, justifyContent: 'center', alignItems: 'center', marginBottom: 20}}>
+      <View style={{...style.container, justifyContent: 'center', alignItems: 'center', marginBottom: 70}}>
         <FadeInImage uri={pokemonDetail.sprites.back_default} style={style.spritesImg} />
       </View>
     </ScrollView>
